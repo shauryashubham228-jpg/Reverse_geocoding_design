@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "functions": {
+    "api/geo.js":            { "maxDuration": 10 },
+    "api/geo-warmup.js":     { "maxDuration": 30 },
+    "api/geo-invalidate.js": { "maxDuration": 15 },
+    "api/health.js":         { "maxDuration": 5  },
+    "api/metrics.js":        { "maxDuration": 10 }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "https://lagorii.com" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}
