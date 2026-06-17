@@ -1,6 +1,6 @@
-# lagorii-geo-api
+# ecommerce-geo-api
 
-Server-side geolocation caching API for [Lagorii](https://lagorii.com). Accepts browser coordinates, caches results in Redis, and returns pincode + city for the ETA widget — keeping the Google Maps API key off the client entirely.
+Server-side geolocation caching API for [ecommerce]. Accepts browser coordinates, caches results in Redis, and returns pincode + city for the ETA widget — keeping the Google Maps API key off the client entirely.
 
 ## Architecture
 
